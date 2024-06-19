@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE43AA482C2313B000ED25CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CE43AA472C2313B000ED25CC /* .gitignore */; };
 		CE65D9B92C1A0B9F0024DBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65D9B82C1A0B9F0024DBF8 /* AppDelegate.swift */; };
 		CE65D9BB2C1A0B9F0024DBF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65D9BA2C1A0B9F0024DBF8 /* SceneDelegate.swift */; };
 		CE65D9BD2C1A0B9F0024DBF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65D9BC2C1A0B9F0024DBF8 /* ViewController.swift */; };
 		CE65D9C02C1A0B9F0024DBF8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE65D9BF2C1A0B9F0024DBF8 /* Base */; };
 		CE65D9C22C1A0BA10024DBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE65D9C12C1A0BA10024DBF8 /* Assets.xcassets */; };
 		CE65D9C52C1A0BA10024DBF8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE65D9C42C1A0BA10024DBF8 /* Base */; };
+		CE65D9CE2C1A0C010024DBF8 /* MediaTrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65D9CD2C1A0C010024DBF8 /* MediaTrendTableViewCell.swift */; };
+		CE65D9D12C1A0C830024DBF8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE65D9D02C1A0C830024DBF8 /* SnapKit */; };
+		CE65D9D42C1A0C9E0024DBF8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE65D9D32C1A0C9E0024DBF8 /* Alamofire */; };
+		CE65D9D72C1A0CE40024DBF8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE65D9D62C1A0CE40024DBF8 /* Kingfisher */; };
+		CE6A733D2C1B051300389E4F /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A733C2C1B051300389E4F /* TvShow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE43AA472C2313B000ED25CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CE65D9B52C1A0B9F0024DBF8 /* MediaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65D9B82C1A0B9F0024DBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE65D9BA2C1A0B9F0024DBF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		CE65D9C12C1A0BA10024DBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE65D9C42C1A0BA10024DBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE65D9C62C1A0BA10024DBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE65D9CD2C1A0C010024DBF8 /* MediaTrendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTrendTableViewCell.swift; sourceTree = "<group>"; };
+		CE6A733C2C1B051300389E4F /* TvShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE65D9D72C1A0CE40024DBF8 /* Kingfisher in Frameworks */,
+				CE65D9D12C1A0C830024DBF8 /* SnapKit in Frameworks */,
+				CE65D9D42C1A0C9E0024DBF8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,8 @@
 		CE65D9AC2C1A0B9F0024DBF8 = {
 			isa = PBXGroup;
 			children = (
+				CE43AA472C2313B000ED25CC /* .gitignore */,
+				CE65D9CC2C1A0BB50024DBF8 /* TrendingMedia */,
 				CE65D9B72C1A0B9F0024DBF8 /* MediaProject */,
 				CE65D9B62C1A0B9F0024DBF8 /* Products */,
 			);
@@ -58,13 +72,22 @@
 			children = (
 				CE65D9B82C1A0B9F0024DBF8 /* AppDelegate.swift */,
 				CE65D9BA2C1A0B9F0024DBF8 /* SceneDelegate.swift */,
-				CE65D9BC2C1A0B9F0024DBF8 /* ViewController.swift */,
 				CE65D9BE2C1A0B9F0024DBF8 /* Main.storyboard */,
 				CE65D9C12C1A0BA10024DBF8 /* Assets.xcassets */,
 				CE65D9C32C1A0BA10024DBF8 /* LaunchScreen.storyboard */,
 				CE65D9C62C1A0BA10024DBF8 /* Info.plist */,
 			);
 			path = MediaProject;
+			sourceTree = "<group>";
+		};
+		CE65D9CC2C1A0BB50024DBF8 /* TrendingMedia */ = {
+			isa = PBXGroup;
+			children = (
+				CE65D9BC2C1A0B9F0024DBF8 /* ViewController.swift */,
+				CE65D9CD2C1A0C010024DBF8 /* MediaTrendTableViewCell.swift */,
+				CE6A733C2C1B051300389E4F /* TvShow.swift */,
+			);
+			path = TrendingMedia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +106,11 @@
 			dependencies = (
 			);
 			name = MediaProject;
+			packageProductDependencies = (
+				CE65D9D02C1A0C830024DBF8 /* SnapKit */,
+				CE65D9D32C1A0C9E0024DBF8 /* Alamofire */,
+				CE65D9D62C1A0CE40024DBF8 /* Kingfisher */,
+			);
 			productName = MediaProject;
 			productReference = CE65D9B52C1A0B9F0024DBF8 /* MediaProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,11 @@
 				Base,
 			);
 			mainGroup = CE65D9AC2C1A0B9F0024DBF8;
+			packageReferences = (
+				CE65D9CF2C1A0C830024DBF8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CE65D9D22C1A0C9E0024DBF8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE65D9D52C1A0CE40024DBF8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CE65D9B62C1A0B9F0024DBF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE43AA482C2313B000ED25CC /* .gitignore in Resources */,
 				CE65D9C22C1A0BA10024DBF8 /* Assets.xcassets in Resources */,
 				CE65D9C52C1A0BA10024DBF8 /* Base in Resources */,
 				CE65D9C02C1A0B9F0024DBF8 /* Base in Resources */,
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE65D9CE2C1A0C010024DBF8 /* MediaTrendTableViewCell.swift in Sources */,
 				CE65D9BD2C1A0B9F0024DBF8 /* ViewController.swift in Sources */,
+				CE6A733D2C1B051300389E4F /* TvShow.swift in Sources */,
 				CE65D9B92C1A0B9F0024DBF8 /* AppDelegate.swift in Sources */,
 				CE65D9BB2C1A0B9F0024DBF8 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,11 +331,13 @@
 				DEVELOPMENT_TEAM = 9RL93J625H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MediaProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Media Project";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +345,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.MediaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,11 +365,13 @@
 				DEVELOPMENT_TEAM = 9RL93J625H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MediaProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Media Project";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +379,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.MediaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -363,6 +411,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE65D9CF2C1A0C830024DBF8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		CE65D9D22C1A0C9E0024DBF8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		CE65D9D52C1A0CE40024DBF8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE65D9D02C1A0C830024DBF8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE65D9CF2C1A0C830024DBF8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CE65D9D32C1A0C9E0024DBF8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE65D9D22C1A0C9E0024DBF8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE65D9D62C1A0CE40024DBF8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE65D9D52C1A0CE40024DBF8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE65D9AD2C1A0B9F0024DBF8 /* Project object */;
 }
